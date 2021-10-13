@@ -4,6 +4,13 @@ creating word vectors using Random Indexing technique. Function returning k near
 
 Function returning k nearest neighbors with distances for each word in `words`
 
+Default dataset are the Harry Potter books, The dataset can be opted out by adding argument 
+
+"--cleaning custom_data.txt" 
+example: python3 random_indexing.py -c -co custom.txt
+
+The dataset is first stripped from other notations than letters and then worked into a word list. 
+
 
 To describe how the function operates, imagine you want to find 5 nearest neighbors for the words
 "Harry" and "Potter" using cosine distance (which can be computed as 1 - cosine similarity).
